@@ -6,13 +6,18 @@ main ul {
   gap: 20px;
 }
 
-main li {
+main ul li {
   display: flex;
   background-color: white;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   /* 요소 크기를 넘는 내용을 잘라서 숨기는 속성 */
   overflow: hidden;
+  transition: all 1.5s ease-out;
+}
+
+main ul li:hover {
+  transform: scale(1.1);
 }
 
 main ul li:nth-of-type(3) {
@@ -29,7 +34,6 @@ main li img {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .item-content h2 {
